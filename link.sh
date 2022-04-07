@@ -7,4 +7,5 @@ link()
 }
 
 # link homebrew.cfg .Brewfile
-link "git/git.cfg" ".gitconfig"
+# link "git/git.cfg" ".gitconfig"
+link "ssh.cfg" ".ssh"
