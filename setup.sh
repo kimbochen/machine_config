@@ -16,7 +16,8 @@ link "nvim.cfg" ".config/nvim/init.vim"
 
 link "ssh.cfg" ".ssh/config"
 link "tmux.cfg" ".tmux.conf"
-link "git/git.cfg" ".gitconfig"
+link "git.cfg" ".gitconfig"
+link "gitignore.cfg" ".gitignore_global"
 link "homebrew.cfg" ".Brewfile"
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
