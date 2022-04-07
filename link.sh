@@ -6,4 +6,5 @@ link()
     ln -s "$(pwd)/$1" "${HOME}/$2"
 }
 
-link homebrew.cfg .Brewfile
+# link homebrew.cfg .Brewfile
+link "git/git.cfg" ".gitconfig"
