@@ -1,6 +1,6 @@
 link()
 {
-    if [ ! -f "$(pwd)/$1" ]; then
+    if [ ! -f "${HOME}/$2" ]; then
         ln -s "$(pwd)/$1" "${HOME}/$2"
         if [ -e "${HOME}/$2" ]; then
             echo "$2 symlink created."
@@ -8,9 +8,8 @@ link()
     fi
 }
 
-link "bash/bashrc.cfg" ".bashrc"
-link "bash/profile.cfg" ".bash_profile"
-link "bash/inputrc.cfg" ".inputrc"
+link "bash.cfg" ".bash_profile"
+link "input.cfg" ".inputrc"
 
 mkdir -p "${HOME}/.config/nvim"
 link "nvim.cfg" ".config/nvim/init.vim"
